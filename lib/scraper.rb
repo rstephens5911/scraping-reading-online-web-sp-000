@@ -1,9 +1,11 @@
 require 'nokogiri'
 require 'open-uri'
 
-html = open("https://flatironschool.com/")
+class Scraper
+  html = open("http://flatironschool.com/")
+  doc = Nokogiri::HTML(html)
+  puts doc
+  
 
-Nokogiri::HTML(html)
 
-doc = Nokogiri::HTML(html)
-doc.css(".headline-26OIBN")
+end
