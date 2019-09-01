@@ -9,7 +9,7 @@ class Scraper
   courses.each do |course|
     puts course.strip
   end
-  
+
 
 
 
