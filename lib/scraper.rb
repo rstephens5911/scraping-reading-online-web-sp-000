@@ -5,7 +5,7 @@ class Scraper
   doc = open("http://flatironschool.com/")
   doc = Nokogiri::HTML(open("http://flatironschool.com/"))
   doc.css(".headline-260IBN")
-  puts doc
+  puts doc.css
 
 
 
